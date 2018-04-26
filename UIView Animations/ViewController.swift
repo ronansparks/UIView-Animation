@@ -81,6 +81,7 @@ class ViewController: UIViewController {
     }
     
     //MARK: - 转场动画
+    //从左翻转
     @IBAction func flipFromLeft(_ sender: UIButton) {
         UIView.transition(with: rightImageView, duration: duration, options: .transitionFlipFromLeft, animations: {
             self.rightImageView.image = UIImage(named: "dog")
@@ -89,6 +90,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //从上翻转
     @IBAction func flipFromTop(_ sender: UIButton) {
         UIView.transition(with: rightImageView, duration: duration, options: .transitionFlipFromTop, animations: {
             self.rightImageView.image = UIImage(named: "dog")
@@ -97,6 +99,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //从上卷曲翻页
     @IBAction func curlDown(_ sender: UIButton) {
         UIView.transition(with: rightImageView, duration: duration, options: .transitionCurlDown, animations: {
             self.rightImageView.image = UIImage(named: "dog")
@@ -105,6 +108,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //溶解过渡
     @IBAction func crossDissolve(_ sender: UIButton) {
         UIView.transition(with: rightImageView, duration: duration, options: .transitionCrossDissolve, animations: {
             self.rightImageView.image = UIImage(named: "dog")
